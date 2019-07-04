@@ -1,5 +1,5 @@
 design-patterns
 ===============
 
-A Symfony project created on February 20, 2016, 5:06 pm.
+This is just a guide to have some PHP design patterns I use.
 # DesignPatterns

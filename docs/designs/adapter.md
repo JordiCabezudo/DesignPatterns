@@ -1,14 +1,18 @@
-# factory
+# adapter
 
 ## Description
-Factory Method in PHP. Factory method is a creational design pattern which solves the problem of creating product objects without specifying their concrete classes. Factory Method defines a method, which should be used for creating objects instead of direct constructor call (new operator).
+An adapter allows two incompatible interfaces to work together. This is the real-world definition for an adapter. Interfaces may be incompatible, but the inner functionality should suit the need. The adapter design pattern allows otherwise incompatible classes to work together by converting the interface of one class into an interface expected by the clients.
 
 
 ## Examples
 
-Retrieve a class by name:
+Persist product on different repository implementations
 ```php
 <?php
 
-ProductFactory::getProductInstance('objectName');
+$createProductService = new CreateProduct(
+    new Implemeentation()
+);
+
+$createProductService->execute(Uuid);
 ```

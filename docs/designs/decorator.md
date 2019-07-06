@@ -1,18 +1,18 @@
-# adapter
+# decorator
 
 ## Description
-An adapter allows two incompatible interfaces to work together. This is the real-world definition for an adapter. Interfaces may be incompatible, but the inner functionality should suit the need. The adapter design pattern allows otherwise incompatible classes to work together by converting the interface of one class into an interface expected by the clients.
+In object-oriented programming, the decorator pattern is a design pattern that allows behavior to be added to an individual object, dynamically, without affecting the behavior of other objects from the same class.[1] The decorator pattern is often useful for adhering to the Single Responsibility Principle, as it allows functionality to be divided between classes with unique areas of concern.[2] The decorator pattern is structurally nearly identical to the chain of responsibility pattern, the difference being that in a chain of responsibility, exactly one of the classes handles the request, while for the decorator, all classes handle the request.
 
 
 ## Examples
 
-Persist product on different repository implementations
+Decorate response
 ```php
 <?php
 
-$createProductService = new CreateProduct(
-    new Implemeentation()
+$response = new ProductDecorator(
+    new BaseResponse(
+        'text'
+    )
 );
-
-$createProductService->execute(Uuid);
 ```

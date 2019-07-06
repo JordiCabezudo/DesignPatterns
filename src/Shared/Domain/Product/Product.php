@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Factory;
+namespace DesignPatterns\Shared\Domain\Product;
 
 interface Product
 {

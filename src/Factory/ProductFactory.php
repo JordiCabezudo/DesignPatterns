@@ -2,6 +2,9 @@
 
 namespace DesignPatterns\Factory;
 
+use DesignPatterns\Shared\Domain\Product\Guitar;
+use DesignPatterns\Shared\Domain\Product\Piano;
+use DesignPatterns\Shared\Domain\Product\Trumpet;
 use InvalidArgumentException;
 
 class ProductFactory

@@ -2,10 +2,10 @@
 
 namespace DesignPatterns\Factory\Test;
 
-use DesignPatterns\Factory\Guitar;
-use DesignPatterns\Factory\Piano;
 use DesignPatterns\Factory\ProductFactory;
-use DesignPatterns\Factory\Trumpet;
+use DesignPatterns\Shared\Domain\Product\Guitar;
+use DesignPatterns\Shared\Domain\Product\Piano;
+use DesignPatterns\Shared\Domain\Product\Trumpet;
 use http\Exception\InvalidArgumentException;
 use PHPUnit_Framework_TestCase;
 

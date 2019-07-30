@@ -7,6 +7,7 @@ An adapter allows two incompatible interfaces to work together. This is the real
 ## Examples
 
 Persist product on different repository implementations
+first commit to be checked
 ```php
 <?php
 
